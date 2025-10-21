@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAA-AI | AI Generative Earning System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #4f46e5, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4), 0 4px 6px -2px rgba(79, 70, 229, 0.2);
+        }
+        .card {
+            background: rgba(31, 29, 42, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            border-color: #4f46e5;
+            transform: translateY(-5px);
+        }
+        .feature-card {
+            background: #111827;
+        }
+        .section-glow {
+            position: absolute;
+            z-index: -1;
+            width: 50vw;
+            height: 50vh;
+            filter: blur(150px);
+            opacity: 0.15;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-bold tracking-tighter">SAA<span class="gradient-text">-AI</span></h1>
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-gray-300 hover:text-white transition">About Us</a>
+                    <a href="#membership" class="text-gray-300 hover:text-white transition">Membership</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white transition">Benefits</a>
+                    <a href="#payment" class="text-gray-300 hover:text-white transition">Payment</a>
+                    <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg cta-button">Join Now</a>
+                </nav>
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-300 hover:text-white transition">About Us</a>
+            <a href="#membership" class="block py-2 text-gray-300 hover:text-white transition">Membership</a>
+            <a href="#benefits" class="block py-2 text-gray-300 hover:text-white transition">Benefits</a>
+            <a href="#payment" class="block py-2 text-gray-300 hover:text-white transition">Payment</a>
+            <a href="#contact" class="block mt-2 bg-indigo-600 hover:bg-indigo-700 text-white text-center font-semibold py-2 px-4 rounded-lg cta-button">Join Now</a>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="relative py-20 md:py-32 text-center overflow-hidden">
+            <div class="section-glow top-0 left-0 bg-indigo-500"></div>
+            <div class="section-glow bottom-0 right-0 bg-pink-500"></div>
+            <div class="container mx-auto px-6 relative z-10">
+                <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Welcome to the Future of Earning</h2>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6">
+                    <span class="gradient-text">SAA-AI Generative System</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">A mandatory, global payment system for all to benefit. Your Self Actualization Saving Account for the digital age.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#membership" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full text-lg cta-button">Explore Plans</a>
+                    <a href="#about" class="bg-gray-700/50 hover:bg-gray-600/50 text-white font-bold py-3 px-8 rounded-full text-lg cta-button">Learn More</a>
+                </div>
+                <div class="mt-12">
+                    <p class="text-gray-400">Founded by MD/CEO</p>
+                    <p class="text-xl font-semibold text-white">Samson Adesanya Attram</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold">About <span class="gradient-text">SAA-AI</span></h2>
+                    <p class="text-gray-400 mt-2">More than a system—it's a revolution.</p>
+                </div>
+                <div class="max-w-4xl mx-auto text-center bg-gray-900/50 p-8 md:p-12 rounded-3xl border border-gray-700">
+                    <p class="text-lg text-gray-300">
+                        Samson Adesanya Attram AI Generative Earning Income Streams System is a pioneering platform, designed not as a scheme, but as a state, national, and global mandatory payment system. We are creating a FINTECH and Banking & Finance tabloid for the masses, ensuring everyone benefits. Our vision is to empower individuals through community, providing access to Fintech, E-Commerce, Free Training, Empowerment, Grants, and Scholarships.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Core Values -->
+        <section id="features" class="py-20">
+            <div class="container mx-auto px-6">
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="feature-card p-6 rounded-2xl text-center border border-gray-800">
+                        <h3 class="text-2xl font-bold mb-2 gradient-text">Vision</h3>
+                        <p class="text-gray-400">To build a global, automated earning ecosystem for universal financial self-actualization.</p>
+                    </div>
+                     <div class="feature-card p-6 rounded-2xl text-center border border-gray-800">
+                        <h3 class="text-2xl font-bold mb-2 gradient-text">Mission</h3>
+                        <p class="text-gray-400">To provide accessible tools for earning, learning, and community engagement through AI.</p>
+                    </div>
+                    <div class="feature-card p-6 rounded-2xl text-center border border-gray-800">
+                        <h3 class="text-2xl font-bold mb-2 gradient-text">AI Analytics</h3>
+                        <p class="text-gray-400">Leverage our AI-powered dashboard for insights on your earnings and network growth.</p>
+                    </div>
+                    <div class="feature-card p-6 rounded-2xl text-center border border-gray-800">
+                        <h3 class="text-2xl font-bold mb-2 gradient-text">Community</h3>
+                        <p class="text-gray-400">Join a thriving community focused on Fintech, E-Commerce, and mutual support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Categories Section -->
+        <section id="membership" class="py-20 relative overflow-hidden">
+             <div class="section-glow top-1/4 left-1/4 bg-purple-600"></div>
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold">Membership <span class="gradient-text">Categories</span></h2>
+                    <p class="text-gray-400 mt-2">Choose your path to financial freedom. All registrations start with just ₦1,000.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Pricing Cards -->
+                    <div class="card p-8 text-center flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-2">Freedom Starter</h3>
+                        <p class="text-5xl font-bold mb-4 gradient-text">₦1,000</p>
+                        <p class="text-gray-400 mb-6 flex-grow">The first step to unlocking your earning potential.</p>
+                        <a href="#payment" class="w-full mt-auto bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg cta-button">Get Started</a>
+                    </div>
+                    <div class="card p-8 text-center flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-2">Standard Elite Club</h3>
+                        <p class="text-5xl font-bold mb-4 gradient-text">₦10,000</p>
+                        <p class="text-gray-400 mb-6 flex-grow">Join the elite and accelerate your income stream.</p>
+                        <a href="#payment" class="w-full mt-auto bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg cta-button">Select Plan</a>
+                    </div>
+                    <div class="card p-8 text-center flex flex-col ring-2 ring-pink-500 relative">
+                         <span class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full">POPULAR</span>
+                        <h3 class="text-2xl font-semibold mb-2">Bronze EC</h3>
+                        <p class="text-5xl font-bold mb-4 gradient-text">₦100,000</p>
+                        <p class="text-gray-400 mb-6 flex-grow">Unlock exclusive benefits, gifts, and training.</p>
+                        <a href="#payment" class="w-full mt-auto bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-lg cta-button">Select Plan</a>
+                    </div>
+                    <div class="card p-8 text-center flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-2">Silver EC</h3>
+                        <p class="text-5xl font-bold mb-4 gradient-text">₦200,000</p>
+                        <p class="text-gray-400 mb-6 flex-grow">Elevate your status and rewards to the next level.</p>
+                        <a href="#payment" class="w-full mt-auto bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg cta-button">Select Plan</a>
+                    </div>
+                    <div class="card p-8 text-center flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-2">Gold EC</h3>
+                        <p class="text-5xl font-bold mb-4 gradient-text">₦400,000</p>
+                        <p class="text-gray-400 mb-6 flex-grow">Premium access for serious investors and leaders.</p>
+                         <a href="#payment" class="w-full mt-auto bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg cta-button">Select Plan</a>
+                    </div>
+                     <div class="card p-8 text-center flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-2">Platinum</h3>
+                        <p class="text-5xl font-bold mb-4 gradient-text">₦1.1M</p>
+                        <p class="text-gray-400 mb-6 flex-grow">The pinnacle of membership with unparalleled rewards.</p>
+                         <a href="#payment" class="w-full mt-auto bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg cta-button">Select Plan</a>
+                    </div>
+                    <div class="card p-8 text-center flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-2">Diamond</h3>
+                        <p class="text-5xl font-bold mb-4 gradient-text">₦2.5M</p>
+                         <p class="text-gray-400 mb-6 flex-grow">Ultimate status for visionaries leading the charge.</p>
+                         <a href="#payment" class="w-full mt-auto bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg cta-button">Select Plan</a>
+                    </div>
+                    <div class="card p-8 text-center flex flex-col border-dashed border-gray-600">
+                        <h3 class="text-2xl font-semibold mb-2">Total Free</h3>
+                        <p class="text-5xl font-bold mb-4 gradient-text">₦10</p>
+                        <p class="text-gray-400 mb-6 flex-grow">A starting point to explore the community. Limited access.</p>
+                        <a href="#payment" class="w-full mt-auto bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg cta-button">Register Free</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits/Advertisement Section -->
+        <section id="benefits" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold">How to Earn & <span class="gradient-text">Benefits</span></h2>
+                    <p class="text-gray-400 mt-2">Simple steps to activate your monthly salary and rewards.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Benefit Cards -->
+                    <div class="card p-8">
+                        <h3 class="text-xl font-bold mb-3">Free Registration Path</h3>
+                        <p class="text-gray-300">Register for free and refer 20 people who join the ₦1,000 Freedom Starter plan. You'll get a full ₦10,000 membership and a <span class="font-bold text-pink-400">₦100,000 monthly salary</span> after your first month based on tasks and traffic engagement.</p>
+                    </div>
+                    <div class="card p-8">
+                        <h3 class="text-xl font-bold mb-3">Starter Path (₦1,000)</h3>
+                        <p class="text-gray-300">Register with ₦1,000 and refer 10 downlines. Start earning full membership benefits the same month and receive <span class="font-bold text-pink-400">₦3,000 every two weeks for free.</span></p>
+                    </div>
+                    <div class="card p-8">
+                        <h3 class="text-xl font-bold mb-3">Elite Path (₦10,000)</h3>
+                        <p class="text-gray-300">Register with ₦10,000 to get an instant ₦1,000 cash-out, <span class="font-bold text-pink-400">₦5,000 free every two weeks,</span> and activate your ₦100,000 monthly salary.</p>
+                    </div>
+                    <div class="card p-8">
+                        <h3 class="text-xl font-bold mb-3">Bronze Path (₦100,000)</h3>
+                        <p class="text-gray-300">Register with ₦100,000 for a ₦10,000 instant cash-out plus amazing free gifts: <span class="font-bold text-pink-400">a laptop, library access, digital marketing training, and even a free website & app developed for you.</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Options Section -->
+        <section id="payment" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold">Payment <span class="gradient-text">Options</span></h2>
+                    <p class="text-gray-400 mt-2">Make your payment to the account below to activate your chosen rank.</p>
+                    <p class="font-bold text-xl mt-4">Pay to: SAMSON ADESANYA ATTRAM -- SAA</p>
+                </div>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Payment Method Cards -->
+                    <div class="bg-gray-800/50 p-6 rounded-2xl border border-gray-700">
+                        <p class="font-bold text-lg text-white">Access Bank</p>
+                        <p class="text-2xl font-mono text-indigo-400 tracking-widest mt-2">0011017440</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-6 rounded-2xl border border-gray-700">
+                        <p class="font-bold text-lg text-white">UBA</p>
+                        <p class="text-2xl font-mono text-indigo-400 tracking-widest mt-2">2122704664</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-6 rounded-2xl border border-gray-700">
+                        <p class="font-bold text-lg text-white">GTB</p>
+                        <p class="text-2xl font-mono text-indigo-400 tracking-widest mt-2">0171710712</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-6 rounded-2xl border border-gray-700">
+                        <p class="font-bold text-lg text-white">OPAY</p>
+                        <p class="text-2xl font-mono text-indigo-400 tracking-widest mt-2">8062774663</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-6 rounded-2xl border border-gray-700 col-span-1 sm:col-span-2 lg:col-span-1">
+                        <p class="font-bold text-lg text-white">PayPal</p>
+                        <p class="text-2xl font-mono text-indigo-400 mt-2">SAMSON ATTRAM</p>
+                    </div>
+                </div>
+                 <div id="copy-message" class="text-center mt-6 text-green-400 opacity-0 transition-opacity">Account number copied!</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900/50 border-t border-gray-800 mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            <h3 class="text-3xl font-bold mb-2">Ready to Join SAA-AI?</h3>
+            <p class="mb-6">Start your journey today and be part of the financial revolution.</p>
+            <a href="#membership" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full text-lg cta-button mb-8 inline-block">Become a Member</a>
+            <p>&copy; 2025 SAA-AI. All Rights Reserved.</p>
+            <p>A venture by Samson Adesanya Attram Enterprise on Digital Marketing & Analytics.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Copy account number to clipboard
+        const paymentCards = document.querySelectorAll('#payment .font-mono');
+        const copyMessage = document.getElementById('copy-message');
+
+        paymentCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const accountNumber = card.innerText;
+                if (navigator.clipboard) {
+                    navigator.clipboard.writeText(accountNumber).then(() => {
+                        showCopyMessage();
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                } else {
+                    // Fallback for older browsers
+                    const textArea = document.createElement('textarea');
+                    textArea.value = accountNumber;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    try {
+                        document.execCommand('copy');
+                        showCopyMessage();
+                    } catch (err) {
+                        console.error('Fallback: Oops, unable to copy', err);
+                    }
+                    document.body.removeChild(textArea);
+                }
+            });
+        });
+
+        function showCopyMessage() {
+            copyMessage.classList.remove('opacity-0');
+            setTimeout(() => {
+                copyMessage.classList.add('opacity-0');
+            }, 2000);
+        }
+
+    </script>
+</body>
+</html>
